@@ -1,0 +1,45 @@
+.portifolio {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+}
+
+.portifolio li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.portifolio li .title {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.portifolio li .title.github::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  background-image: url("/assets/images/icons/github.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.portifolio li a {
+  counter-reset: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.portifolio li a:hover {
+  text-decoration: underline;
+}
